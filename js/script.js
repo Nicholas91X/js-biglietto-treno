@@ -20,7 +20,7 @@ if (età < 18) {
     prezzoBigliettoSconto = ((prezzoBiglietto) - (prezzoBiglietto / 100 * 20))
 } else if (età > 65) {
     prezzoBigliettoSconto = ((prezzoBiglietto) - (prezzoBiglietto / 100 * 40))
-} else {
+} else if (età >= 18 || età <= 65) {
     prezzoBigliettoSconto = prezzoBiglietto
 }
 document.getElementById("prezzo_totale").innerHTML = prezzoBigliettoSconto.toFixed(2) + "€";
