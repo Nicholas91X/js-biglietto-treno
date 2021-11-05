@@ -3,3 +3,67 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+main {
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 0;
+    background-image: url(../img/frecciarossa.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.biglietto {
+    width: 300px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: white;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+#titolo {
+    text-align: center;
+}
+
+.logo {
+    margin: 10px 0;
+}
+
+.logo-img {
+    width: 15%;
+}
+
+.container-distanza,
+.container-eta {
+    display: flex;
+    align-items: center;
+}
+
+#totale_eta,
+#totale_distanza {
+    margin-left: 5px;
+}
+
+.container-eta {
+    margin: 10px 0;
+}
+
+.container-sconto {
+    padding-top: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.prezzo_totale {
+    width: 50px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: 10px;
+}
