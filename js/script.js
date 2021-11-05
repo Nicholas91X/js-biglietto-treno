@@ -16,7 +16,7 @@ let prezzoBiglietto = parseFloat(distanza * prezzoKm);
 console.log("Importo totale del biglietto: " + prezzoBiglietto + "€");
 
 // Creo lo sconto in base all'età
-if (età < 18) {
+if (età < 18 && età > 0) {
     prezzoBigliettoSconto = ((prezzoBiglietto) - (prezzoBiglietto / 100 * 20))
 } else if (età > 65) {
     prezzoBigliettoSconto = ((prezzoBiglietto) - (prezzoBiglietto / 100 * 40))
